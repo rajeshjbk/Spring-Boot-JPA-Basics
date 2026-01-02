@@ -27,10 +27,4 @@ public class JobSeekerMgmtServiceImpl implements IJobSeekerMgmtService {
 		
 		return jobSeekerRepo.findById(id).orElseThrow(()->new IllegalArgumentException("Invalid id"));
 	}
-
-	@Override
-	public List<JobSeeker> showAllJobSeekers() {
-		
-		return jobSeekerRepo.findAll();
-	}
 }

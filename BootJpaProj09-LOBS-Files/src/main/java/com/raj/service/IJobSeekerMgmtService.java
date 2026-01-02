@@ -8,5 +8,4 @@ public interface IJobSeekerMgmtService {
 
 	String registerJobSeeker(JobSeeker js);
 	JobSeeker findJobSeekerById(int id);
-	List<JobSeeker> showAllJobSeekers();
 }
