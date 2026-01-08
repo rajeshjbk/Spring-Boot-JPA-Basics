@@ -45,7 +45,6 @@ public class Politician {
 	@JoinColumn(name = "PP_ID", referencedColumnName = "PARTYID")
 	private PoliticalParty party; //HAS-A property to build Many to One Association
 
-	
 	public Politician(){
 		
 		System.out.println("Politician:: 0-param constructor");
