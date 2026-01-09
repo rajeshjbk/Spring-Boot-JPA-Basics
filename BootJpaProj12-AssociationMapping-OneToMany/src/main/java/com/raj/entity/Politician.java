@@ -53,5 +53,4 @@ public class Politician {
 	public String toString() {
 		return "Politician [pid=" + pid + ", pname=" + pname + ", paddrs=" + paddrs + ", age=" + age + "]";
 	}
-	
 }
