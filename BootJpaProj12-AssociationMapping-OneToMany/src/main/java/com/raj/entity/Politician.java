@@ -41,7 +41,7 @@ public class Politician {
 	@NonNull
 	private Integer age;
 	
-	@ManyToOne(targetEntity = PoliticalParty.class, cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	@ManyToOne(targetEntity = PoliticalParty.class, cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	@JoinColumn(name = "PP_ID", referencedColumnName = "PARTYID")
 	private PoliticalParty party; //HAS-A property to build Many to One Association
 
